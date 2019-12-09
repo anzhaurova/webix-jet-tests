@@ -18,7 +18,8 @@ export default class TopView extends JetView{
 				{ id:"sheet", value:"Spreadsheet", icon:"mdi mdi-table-large"  },
 				{ id:"kanban", value:"Kanban", icon:"mdi mdi-view-column"  },
 				{ id:"pivot", value:"Pivot", icon:"mdi mdi-layers"  },
-				{ id:"files", value:"File Manager", icon:"mdi mdi-folder-star"  }
+				{ id:"files", value:"File Manager", icon:"mdi mdi-folder-star" },
+				{ id:"tablesnew2", value:"TransactionsNewView", icon:"mdi mdi-table"} //Vi add
 			]
 		};
 
