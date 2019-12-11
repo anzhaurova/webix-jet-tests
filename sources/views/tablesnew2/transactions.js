@@ -8,31 +8,42 @@ export default class TransactionsNewView extends JetView {
 			select:true, tooltip:true,
 			columns:[
 				{
-					id:"date", header:"Date",
-					fillspace:1, minWidth:100,
-					sort:"date", format:webix.Date.dateToStr("%j %F")
+					id:"datetime", header:"Дата и время",
+					fillspace:1.5, minWidth:100,
+					// sort:"date", format:webix.Date.dateToStr("%j %F")
 				},
 				{
-					id:"method", header:"Payment", fillspace:1, minWidth:90, sort:"text",
+					id:"method", header:"Номер", fillspace:1, minWidth:90, sort:"text",
 					tooltip:"The card with which the payment was made",
-					template:data => `<img class="method" src="data/images/${data.method}.svg" />`
+					// template:data => `<img class="method" src="data/images/${data.method}.svg" />`
 				},
-				{
-					id:"", header:"", fillspace:3, template:"#method# #number#"
-				},
+				// {
+				// 	id:"", header:"", fillspace:3, template:"#method# #number#"
+				// },
 				{
 					id:"name", header:{
-						text:"Purchase",
+						text:"Канал",
 						tooltip:"Click to sort the list by shops"
 					},
-					fillspace:4, minWidth:200, sort:"text"
+					fillspace:3, minWidth:200, sort:"text"
 				},
 				{
-					id:"sum", header:"Sum", sort:"int",
+					id:"adress", header:{
+						text:"Адрес",
+						tooltip:"Click to sort the list by shops"
+					},
+					fillspace:3, minWidth:200, sort:"text"
+				},
+				{
+					id:"sum", header:"УК", sort:"int",
 					fillspace:1.5, minWidth:90,
 					format:webix.i18n.priceFormat
 				},
-				
+				{
+					id:"sum", header:"Идентификатор", sort:"int",
+					fillspace:1.5, minWidth:90,
+					format:webix.i18n.priceFormat
+				},
 			]
 		};
 	}
