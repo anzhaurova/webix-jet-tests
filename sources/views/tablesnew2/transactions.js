@@ -25,24 +25,24 @@ export default class TransactionsNewView extends JetView {
 						text:"Канал",
 						tooltip:"Click to sort the list by shops"
 					},
-					fillspace:3, minWidth:200, sort:"text"
+					fillspace:1, minWidth:200, sort:"text"
 				},
 				{
-					id:"adress", header:{
+					id:"address", header:{
 						text:"Адрес",
 						tooltip:"Click to sort the list by shops"
 					},
-					fillspace:3, minWidth:200, sort:"text"
+					fillspace:4, minWidth:200, sort:"text"
 				},
 				{
 					id:"sum", header:"УК", sort:"int",
-					fillspace:1.5, minWidth:90,
-					format:webix.i18n.priceFormat
+					fillspace:1.5, minWidth:200,
+					// format:webix.i18n.priceFormat
 				},
 				{
-					id:"sum", header:"Идентификатор", sort:"int",
+					id:"identity", header:"Идентификатор", sort:"int",
 					fillspace:1.5, minWidth:90,
-					format:webix.i18n.priceFormat
+					// format:webix.i18n.priceFormat
 				},
 			]
 		};
