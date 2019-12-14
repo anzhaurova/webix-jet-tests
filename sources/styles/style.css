@@ -1,0 +1,24 @@
+.webix_dtable_focused .webix_column > div.webix_row_select, .webix_dtable_focused .webix_column > div.webix_column_select {
+    background: #228B22;
+    color: #ffffff;
+}
+.webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header, .webix_dd_drag_column {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ffffff;
+    opacity: 0.6;
+    text-transform: uppercase;
+ 
+}
+.webix_dtable .webix_ss_header td.webix_last_row {
+    border-bottom: none;
+}
+.webix_cell {
+	font-weight: 400;
+    font-size: 16px;
+    text-align: center;  
+}
+.webix_hcell {
+	text-align: center;
+}
