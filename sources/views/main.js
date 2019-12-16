@@ -5,7 +5,6 @@ export default class TopView extends JetView{
 	config(){
 		const header = {
 			type:"header", css:"custom_dark", height:58,
-			template:"ADMIN APP"
 		};
 
 		const sidebar = {
@@ -28,21 +27,22 @@ export default class TopView extends JetView{
 			view:"toolbar",
 			padding:9, height:58,
 			cols:[
-				{ css:"logo" },
-				{ view:"icon", icon:"mdi mdi-bell", badge:"5" },
-				{ view:"icon", icon:"mdi mdi-settings" },
-				{
-					template:`<image class="mainphoto" src="data/images/morgan_yu.jpg">
-					<span class="webix_icon mdi mdi-circle status green"></span>`,
-					width:60, css:"avatar",	borderless:true
-				}
+				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"updatebtn", value:"Обновить" },
+				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"exportbtn", value:"Экспортировать для импорта" },
+				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"exportexcelbtn", value:"Экспортировать в Excel" },
+				// { view:"icon", icon:"mdi mdi-settings" },
+				// {
+				// 	// template:`<image class="mainphoto" src="data/images/morgan_yu.jpg">
+				// 	// <span class="webix_icon mdi mdi-circle status green"></span>`,
+				// 	// width:60, css:"avatar",	borderless:true
+				// }
 			]
 		};
 
 		return {
 			type:"clean", cols:[
 				{ rows:[ header, sidebar ]},
-				{ rows:[ toolbar, { $subview:true } ]}
+				{ rows:[ /*toolbar,*/ { $subview:true } ]}
 			]
 		};
 	}

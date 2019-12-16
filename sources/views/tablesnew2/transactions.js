@@ -3,9 +3,12 @@ import {allpayments} from "models/allpayments";
 
 export default class TransactionsNewView extends JetView {
 	config(){
+
 		return {
-			view:"datatable", localId:"grid",
-			select:true, tooltip:true,
+			view:"datatable", 
+			localId:"grid",
+			select:true, 
+			tooltip:true,
 			columns:[
 				{
 					id:"datetime", header:"Дата и время",
@@ -45,9 +48,14 @@ export default class TransactionsNewView extends JetView {
 					// format:webix.i18n.priceFormat
 				},
 			]
-		};
+
+		}
 	}
+
 	init(grid){
 		grid.sync(allpayments);
 	}
 }
+
+
+

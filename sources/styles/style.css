@@ -22,3 +22,13 @@
 .webix_hcell {
 	text-align: center;
 }
+/*кнопки сверху*/
+.webix_secondary .webix_button {
+    background: #228B22;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+div[view_id="updatebtn"] {width: 50px;}
+div[view_id="exportbtn"] {width: 100px;}
+div[view_id="exportexcelbtn"] {width: 100px;}
