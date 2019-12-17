@@ -20,7 +20,7 @@ export default class TablesNew2View extends JetView{    //add new class
 				},
 				{
 					type:"wide", cols:[
-						{ view:"text", name:"header", value:"sefesfs" },
+						{ view:"text", name:"header", value:"Показания" },
 						
 					]
 				},

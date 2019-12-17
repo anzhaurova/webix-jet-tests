@@ -27,9 +27,9 @@ export default class TopView extends JetView{
 			view:"toolbar",
 			padding:9, height:58,
 			cols:[
-				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"updatebtn", value:"Обновить" },
-				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"exportbtn", value:"Экспортировать для импорта" },
-				{ view:"button", icon:"mdi mdi-bell", width:250, height:120, id:"exportexcelbtn", value:"Экспортировать в Excel" },
+				{ view:"button", icon:"mdi mdi-bell", width:150, height:120, id:"updatebtn", value:"Обновить" },
+				{ view:"button", icon:"mdi mdi-bell", width:300, height:120, id:"exportbtn", value:"Экспортировать для импорта" },
+				{ view:"button", icon:"mdi mdi-bell", width:300, height:120, id:"exportexcelbtn", value:"Экспортировать в Excel" },
 				// { view:"icon", icon:"mdi mdi-settings" },
 				// {
 				// 	// template:`<image class="mainphoto" src="data/images/morgan_yu.jpg">
@@ -42,7 +42,7 @@ export default class TopView extends JetView{
 		return {
 			type:"clean", cols:[
 				{ rows:[ header, sidebar ]},
-				{ rows:[ /*toolbar,*/ { $subview:true } ]}
+				{ rows:[/*toolbar,*/ { $subview:true } ]}
 			]
 		};
 	}
